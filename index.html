@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder by Tayyaba Shahid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Shareable Resume Builder by Tayyaba Shahid</h1>
+        <form id="resume-form">
+            <!-- Form for resume input -->
+             <fieldset>
+                <legend> Personal information </legend>
+
+                <label for="username">UserName:</label>
+                <input type="text" id="username" placeholder="Enter your UserName" required>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+             </fieldset>
+
+                         <!-- Education -->
+            <fieldset>
+                <h2>Education</h2>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" placeholder="Degree" required>
+
+                <label for="institution">Institution:</label>
+                <input type="text" id="institution" name="institution" placeholder="University/College" required>
+
+                <label for="gradYear">Graduation Year:</label>
+                <input type="number" id="gradYear" name="gradYear" placeholder="YYYY" required>
+            </fieldset>
+
+                        <!-- Work Experience -->
+             <fieldset>
+                  <h2>Experience</h2>
+                  <legend>Experience</legend>
+                 <label for="experience">Experience</label>
+                <textarea id="experience" placeholder="Enter Your Work Experience" rows="4" required> </textarea> 
+            
+             </fieldset>
+
+            <!-- Skills -->
+            <section>
+                <h2>Skills</h2>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" placeholder="List your skills here" rows="4"></textarea>
+            </section>
+
+            <button type="submit"><b>Generate your Resume</b></button>
+
+            <br>
+            <!---GENERATE DYNAMIC AND SHAREABLE RESUME-->
+            <div id="resume-display" contenteditable="true">
+        
+        <!--LET'S GENERATE RESUME-->
+        </div>
+
+        <!--SECTION FOR SHAREABLE AND DOWNLOAD LINKS-->
+        <div id="shareable-link-container" style="display: none;"></div>
+        <h2>Shareable Link</h2>
+        <p>here's your unique link to view and edit your resume</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf">Download as download-pdf</button>
+        
+        <script src="script.js" type="module"></script>
+
+ 
+            </form>
+</body>
+</html>
